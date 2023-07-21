@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Carrito.css">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <h1>Carrito de Compras</h1>
+
+    <div id="productos">
+        <h2>Productos</h2>
+        <ul>
+            <li>
+                <img src="/img/branislav-belko-lJ7iAZxplpc-unsplash.jpg" alt="" id="image">
+                <span>Nike Blue - $10</span>
+                <button onclick="agregarAlCarrito('Nike Blue', 10)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="/img/danilo-capece-NoVnXXmDNi0-unsplash.jpg" alt="" id="image">
+                <span>Nike Orange - $20</span>
+                <button onclick="agregarAlCarrito('Nike Orange', 20)">Agregar al carrito</button>
+            </li>
+            <li>
+                <img src="/img/pauline-figuet-ZBuWS1el_50-unsplash.jpg" alt="" id="image">
+                <span>Nike Red- $30</span>
+                <button onclick="agregarAlCarrito('Nike Red', 30)">Agregar al carrito</button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total-carrito">0</span></p>
+    </div>
+
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>
